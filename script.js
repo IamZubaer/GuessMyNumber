@@ -46,11 +46,12 @@ document.querySelector('.check').addEventListener('click', function(){
 })
 
 document.querySelector('.again').addEventListener('click', function(){
+    scoreNum = 20
     score.textContent = 20
     resultMsg.textContent = 'Start guessing...'
     randomNum = Math.trunc(Math.random()*20) + 1
-    console.log(randomNum)
     document.querySelector('body').style.backgroundColor = '#000'
     document.querySelector('.number').style.width = '15rem'
     document.querySelector('.check').style.visibility = 'visible'
+    hiddenNum.textContent = '?'
 })
